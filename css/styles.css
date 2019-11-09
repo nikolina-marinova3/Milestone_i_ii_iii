@@ -29,15 +29,19 @@ line-height: 1.6;
 
     .navbar li a {
       display: block;
+      font-size: 16px;
       color: #fff;
       text-decoration: none;
       padding: 15px 20px;
+      transition: 0.3s font-size linear;
     }
 
     .navbar li a:hover {
       background-color: #2c3e50;
+      font-size: 18px;
       color: #f4f4f4;
       border-radius: 5px;
+      transition: 0.1s font-size linear;
     }
   /* Showcase Styling */
     #showcase .showcase-content {
@@ -55,7 +59,14 @@ line-height: 1.6;
      font-size: 1.7rem;
      margin-bottom: 0.50rem;
      line-height: 1.1;
+     font-weight: bolder;
+     transition: 0.3s font-size linear;
      }
+
+     .l-head:hoover {
+      font-size: 1.9rem;
+      transition: 0.1s font-size linear;
+      }
 
     a {
     text-decoration: none;
@@ -99,13 +110,13 @@ line-height: 1.6;
     width: 100%;
     padding: 10px;
     margin-top: 20px;
-    background: #f4f4f4;
+    background: #5843b3;
     color: #fff;
     cursor: pointer;
     }
 
     .form-wrap button:hover {
-    background: #37a08e
+    background: #230d81
     }
 
     .form-wrap .bottom-text {
@@ -119,7 +130,5 @@ line-height: 1.6;
     }
 
     footer a {
-    color:#4fb89d
+    color:#867dac
     }
-</style>
-    
