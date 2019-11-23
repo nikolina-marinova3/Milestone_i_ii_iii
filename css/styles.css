@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-size: 16px ;
+}
+
+body {
+font-family: 'Raleway', 'Arial', sans-serif;
+background: rgba(165, 162, 151, 0.5);
+color: #fff;
+line-height: 1.6rem;
+}
+   
+  /* Navbar Styling */
+
+      .navbar {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: sticky;
+      top:0;
+      background: rgba(165, 162, 151, 0.9);
+      list-style: none;
+      z-index: 1;
+      border-radius: 3px;
+     }
+
+    .navbar li {
+      border-bottom: 1px dotted rgba(85, 85, 85, 0.52);
+     }
+
+    .navbar li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.2rem 0.6rem;
+      transition: 0.3s font-size linear;
+    }
+
+    .navbar li a:hover {
+      border-bottom: 1px solid #f4f4f4;
+      color: #f4f4f4;
+      transition: 0.1s font-size linear;
+    }
+
+  /* Showcase Styling */
+
+    #showcase {
+        
+        background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+        height: 100vh;
+        color: #fff;
+    }
+
+    #showcase .showcase-content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+      height: 100%;
+      padding: 0 0.4rem;
+      /* Overlay */
+      position: absolute;
+      top: 0px; 
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.4);
+    }  
+    
+    .l-head {
+     display: block;
+     color: #f4f4f4;
+     font-size: 2rem;
+     margin-bottom: 0.5rem;
+     line-height: 1.1;
+     font-weight: bolder;
+     transition: 0.5s font-size linear;
+     }
+
+     .l-head:hoover {
+      font-size: 1.9rem;
+      transition: 0.1s font-size linear;
+      }
+
+    .lead {
+     margin-bottom: 2rem;
+     color: #f4f4f4;
+    }
+
+/* Buttons Styling */
+
+    .btn:link,
+    .btn:visited,
+    input[type=submit] {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0.6rem 1rem;
+        margin-bottom: 1rem;
+        font-weight: 200;
+        text-decoration: none;
+        border-radius: 200px;
+        -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+        transition: background-color 0.2s, border 0.2s, color 0.2s;
+    }
+    .btn-full:link,
+    .btn-full:visited,
+    input[type=submit] {
+        background-color: #e67e22;
+        border: 1px solid #e67e22;
+        color: #fff;
+        margin-right: 0;
+    }
+
+    .btn-ghost:link,
+    .btn-ghost:visited {
+        border: 1px solid #e67e22;
+        color: #e67e22;
+    }
+
+    .btn:hover,
+    .btn:active,
+    input[type=submit]:hover,
+    input[type=submit]:active {
+        background-color: #cf6d17;
+    }
+
+    .btn-full:hover,
+    .btn-full:active {
+        border: 1px solid #cf6d17;
+    }
+
+    .btn-ghost:hover,
+    .btn-ghost:active {
+        border: 1px solid #cf6d17;
+        color: #fff;
+    }
+
+  /* Form Styling */
+
+    #container {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 0.6rem;
+    }
+
+    .form-wrap {
+    background: #fff;
+    padding: 1rem 1rem;
+    color: #333;
+    }
+
+    .form-wrap h1,
+    .form-wrap p {
+    text-align: center;
+    }
+
+    .form-wrap .form-gr {
+    margin-top: 0.6rem;
+    }
+
+    .form-wrap .form-gr label {
+    display: block;
+    color: #777777;
+    }
+
+    .form-wrap .form-gr input {
+    width: 100%;
+    padding: 0.6rem;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+    }
+
+    .form-wrap button {
+    display: block;
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 1.25rem;
+    background: #cf6d17;
+    color: #fff;
+    cursor: pointer;
+    }
+
+    .form-wrap button:hover {
+    background: #b96317
+    }
+
+    .form-wrap .bottom-text {
+    font-size: 0.8rem;
+    margin-top: 1.25rem;
+    }
+   
+    .form-footer {
+        text-align: center;
+        margin-top: 0.6rem;
+    }
+
+     .form-footer a {
+        color:#b96317
+    }
+
+    footer {
+    text-align: center;
+    margin-top: 0.6rem;
+    }
+

@@ -1,0 +1,52 @@
+/* Small phones: from 0 to 480px - MOBILE FIRST APPROACH - as defigned in the main styles.css file */
+
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (min-width: 480px) {
+    * { font-size: 16px; }
+
+    /* Navbar Styling */
+      .navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+ .navbar li a {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+     /* Showcase Styling */
+
+    #showcase {
+        background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+        height: 100vh;
+        color: #fff;
+    }
+
+    #showcase .showcase-content {
+      top: 2rem; 
+      }  
+    
+    .l-head {
+      font-size: 3rem;
+      }
+
+    .lead {
+     margin-bottom: 2rem;
+     }
+}
+    
+/* Small tablet to big tablet: from 768px to 1023px */
+
+@media only screen and (min-width: 768px) {
+    * {font-size: 18px ;}
+      }
+/* Big tablet to 1200px */
+@media only screen and (min-width: 1024px) {
+    * {font-size: 19px ;}
+    
+      #showcase .showcase-content {
+      top: 2rem; 
+      }
+}
