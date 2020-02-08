@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>Cart Project</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- navbar  -->
+
+    <nav class="navbar navbar-expand-lg px-4">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+        <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav mx-auto text-capitalize">
+          <li class="nav-item active">
+            <a class="nav-link" href="#store">store</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-flex justify-content-between">
+          <!-- single info -->
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+            <p class="mb-0">+ 123 456 789</p>
+          </div>
+          <!-- end of single info -->
+          <!-- single info -->
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+            <p class="mb-0 text-capitalize"><span id="item-count">0 </span> items - £<span class="item-total">0.00</span></p>
+          </div>
+          <!-- end of single info -->
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <!-- banner  -->
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-capitalize">Make Your Own <strong class="banner-title ">Jewellery Piece</strong></h1>
+          <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+        </div>
+        <div id="cart" class="cart">
+   
+          <!-- cart total -->
+          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+            <h5>total</h5>
+            <h5> £ <strong id="cart-total" class="font-weight-bold">0.00</strong> </h5>
+          </div>
+          <!--end cart total -->
+          <!-- cart buttons -->
+          <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+            <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+            <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+          </div>
+          <!--end of  cart buttons -->
+          <!--  -->
+        </div>
+      </div>
+    </div>
+    <!--end of  banner  -->
+  </header>
+  <!-- header -->
+  
+  <!-- store -->
+  <section id="store" class="store py-5">
+    <div class="container">
+      <!-- section title -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize">our <strong class="banner-title ">store</strong></h1>
+        </div>
+      </div>
+      <!-- end of section title -->
+              
+        
+      <!-- store  items-->
+      <div class="row" class="store-items" id="store-items">
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Multi Moonstones" data-item="Multi Moonstones">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/multi-moonstone-1.jpg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Multi Moonstone item</h5>
+                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+            
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item moonstones" data-item="moonstones">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/peach-moonstone-1.jpg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">moonstone item</h5>
+                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item turquoise" data-item="turquoise">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/copper-turquoise-cabochon.jpg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+                
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">turquoise item</h5>
+                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item carnelians" data-item="carnelians">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/carnelian.jpg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">carnelian item</h5>
+                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Multi Moonstones" data-item="Multi Moonstones">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/multi-moonstone-2.jpg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Multi Moonstone item</h5>
+                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item moonstones" data-item="moonstones">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/choclate-moonstone-2.jpg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">moonstone item</h5>
+                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+
+
+      </div>
+  </section>
+  <!--end of store items -->
+
+
+  <!-- modal-container -->
+  <div class="container-fluid ">
+    <div class="row lightbox-container align-items-center">
+      <div class="col-10 col-md-10 mx-auto text-right lightbox-holder">
+        <span class="lightbox-close"><i class="fas fa-window-close"></i></span>
+        <div class="lightbox-item"></div>
+        <span class="lightbox-control btnLeft"><i class="fas fa-caret-left"></i></span>
+        <span class="lightbox-control btnRight"><i class="fas fa-caret-right"></i></span>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- script js -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
