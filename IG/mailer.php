@@ -4,7 +4,7 @@
     $name = strip_tags(trim($_POST["name"]));
     $name = str_replace(array("\r","\n"),array(" "," "),$name);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $message = trim($_POST["message"]);
+    $message = trim($_POST["choose-project"]);
 
     // Set the recipient email address.
     $recipient = "nikolina_marinova@yahoo.com";
