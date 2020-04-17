@@ -1,0 +1,153 @@
+/* Small phones: from 0 to 480px - MOBILE FIRST APPROACH - as defigned in the main styles.css file */
+
+
+/* Small phones to small tablets: from 481px to 767px - MOBILE FIRST APPROACH */
+
+@media only screen and (min-width: 480px) {
+    
+    body { font-size: 16px; }
+    .section { padding: 30px 0; }
+    
+    .row,
+    .leading-text-box { padding: 0 2%; }
+    
+   
+    .main-nav { display: none; }
+    
+    .mobile-nav-icon { 
+        display: inline-block;
+        margin-top: 0px; 
+/*        color: #555;*/
+    }
+    
+/*    .mobile-nav-icon i { color: #555; }*/
+        
+    h1 { font-size: 180%; }
+    h3 { font-size: 150%; 
+         padding-top: 3px;}
+    
+    .phrase {
+        width: 100%;
+        margin: 10px 10px;
+        }
+    .view {
+    display: block; 
+    }
+}
+       
+/* Small tablet to big tablet/displays: from 768px to 991px  MOBILE FIRST APPROACH */
+
+    @media only screen and (min-width: 768px) {
+       
+    body { font-size: 18px; }
+    .section { padding: 60px 0; }
+      
+     header {
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/landing-bg.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/landing-bg.jpg);
+    }
+        
+        .leading-text-box {
+        width: 100%;
+        padding: 0 4%;
+    }
+        
+    .row {padding: 0 1%;}
+    
+    .view {
+        display: flex; 
+        justify-content: space-between;
+    }     
+       
+    .phrase {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 3%;
+    }
+    
+    .icon-small { 
+        width: 17px;
+        margin-right: 5px;
+    }
+    
+   .project-step { font-size: 160%;
+        color: #71a436;}
+   .contact-quote { width: 80%; }
+        
+    .section-testimonials {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+        
+    cite img { height: 60px;}  
+                        
+    .checkmarks { font-size: 90%;
+        min-height: 130px;
+        }
+   
+
+}
+
+/* Big tablet/displays: from 992px to 1023px  MOBILE FIRST APPROACH */
+
+    @media only screen and (min-width: 992px) {
+        .mobile-nav-icon {
+         display: none;
+        }
+        
+        .show-menu {
+        display: none;
+        }  
+        
+        .main-nav {
+        display:flex;
+        justify-content: space-around;
+        margin-left: 40px;
+        }
+        
+        .main-nav li {
+        display: inline-block;
+        margin-left: 40px;
+            /*    color: #555;*/
+        }
+        
+        .main-nav li a:link,
+        .main-nav li a:visited {
+            /*    padding: 8px 0;*/
+        padding: 16px 0;
+            /*    color: #fff;*/
+        padding: 16px 0;
+        color: #555;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 90%;
+        border-bottom: 2px solid transparent;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom 0.2s;
+        }
+
+        .main-nav li a:hover,
+        .main-nav li a:active {
+        border-bottom: 2px solid #8BC34A ;
+        }
+        
+}
+        
+/* Big displays from 1024px to 1200px - MOBILE FIRST APPROACH */
+
+@media only screen and (min-width: 1024px) {
+    font-size: 19px;
+}
+.checkmarks { 
+    font-size: 90%;
+    line-height: 150%;
+    }
+
+/* Big displays from 1201px to 1140px - MOBILE FIRST APPROACH */
+
+@media only screen and (min-width: 1201px) {
+    font-size: 20px;
+}
+
+
+
+
