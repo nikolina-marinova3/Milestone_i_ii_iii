@@ -1,8 +1,3 @@
-/*
-Orange color: #8BC34A 
-
-*/
-
 /* ----------------------------------------------- */
 /* MAIN SETTINGs */
 /* ----------------------------------------------- */
@@ -30,7 +25,6 @@ body {
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
 }
-
 /* ----------------------------------------------- */
 /* UTILITY COMPONENTs */
 /* ----------------------------------------------- */
@@ -45,7 +39,6 @@ body {
 }
 
 /* ----- HEADINGs ----- */
-
 h1,
 h2,
 h3,
@@ -63,9 +56,7 @@ h2 {
     word-spacing: 5px;
 }
 
-h2 {
-    font-size: 160%;
-}
+h2 { font-size: 160%; }
 
 h3 {
     font-size: 180%;
@@ -73,7 +64,7 @@ h3 {
     margin-bottom: 2px;
     letter-spacing: 1px;
     word-spacing: 2px;
-     }
+}
 
 h4 {
     font-size: 110%;
@@ -125,6 +116,7 @@ a:active {
 /* ----- BUTTONs ----- */
 .btn:link,
 .btn:visited,
+.next,
 input[type=submit] { 
     display: inline-block;
     border-radius: 16px;
@@ -137,6 +129,7 @@ input[type=submit] {
 
 .btn-filled:link,
 .btn-filled:visited,
+.next,
 input[type=submit] {
     background-color: #4e7125 ;
     border: 1px solid #4e7125;
@@ -170,11 +163,10 @@ input[type=submit]:active {
 }
 
 /* Mobile menu */
-
 .mobile-menu {
   position: fixed;
   top: 0px;
-  right: 0;
+  right: 0px;
   transition: all 0.3s ease-in-out;
   width: 0;
   overflow: hidden;
@@ -183,9 +175,7 @@ input[type=submit]:active {
   justify-content: space-between;
   }   
 
-.mobile-menu ul {
- text-align: left;
-}  
+.mobile-menu ul { text-align: left; }  
 
 .show-menu {
   position: fixed;
@@ -216,7 +206,6 @@ input[type=submit]:active {
 }
 
 /* ----- ICONs ----- */
-
 .icon-big {
     font-size: 350%;
     color: rgb(113, 164, 54) ;
@@ -300,15 +289,14 @@ header {
 }
 
 /* Mobile navi */
-.mobile-nav-icon {
+.mobile-nav-icon, 
+.offer-nav-icon {
     cursor: pointer;
     display: block;
     margin-right: 2px;
 }
 
-.mobile-nav-icon i { 
-    font-size: 200%;
-}
+.mobile-nav-icon i { font-size: 200%; }
 
 /* ----------------------------------------------- */
 /* PROJECTs */
@@ -319,8 +307,15 @@ header {
     padding-top: 70px;
 }
 
+.project-box {
+    background-color: #fcfcfc;
+    border-radius: 7px;
+    width: 100%;
+    margin: 2% 1%;
+    box-shadow: 0 2px 2px #efefef;
+}
 .project-box div {
-    padding: 15px;
+    padding: 15px 7px;
     border-bottom: 1px solid #e8e8e8;
 }
 
@@ -342,9 +337,7 @@ header {
     color: #4e7125;
 }
 
-.project-step-gallery {
-    font-size: 90%;
-}
+.project-step-gallery { font-size: 90%; }
 
 /* ----------------------------------------------- */
 /* SERVICEs */
@@ -355,7 +348,9 @@ header {
     padding-bottom: 7px;
     background-color: #fcfcfc;
 }
-.service { padding: 0 2%; }
+
+.service,
+.advice { padding: 0 2%; }
 .service p { text-align: justify; }
 
 /* ----------------------------------------------- */
@@ -367,8 +362,7 @@ header {
     padding-top: 30px;
 }
 
-.surface-box,
-.project-box {
+.surface-box {
     background-color: #fcfcfc;
     border-radius: 7px;
     width: 96%;
@@ -408,12 +402,12 @@ header {
     list-style: none;
     width: 100%;
     display: flex;
-   }
+}
 
 .galleries-showcase li {
     display: flex;
     width: 25%;
-    }
+}
 
 .gallery-photo {
     width: 98%;
@@ -538,13 +532,9 @@ footer {
     margin: 2px;
 }
 
-.footer-nav {
-    list-style: none;
-}
+.footer-nav { list-style: none; }
 
-.social-links {
-    list-style: none;
-   }
+.social-links { list-style: none; }
 
 .footer-nav li,
 .social-links li {
@@ -586,20 +576,16 @@ footer {
     transition: color 0.2s;
 }
 
-footer i {font-size: 140%}
+footer i { font-size: 140% }
 
 .ion-social-facebook:hover {
     color: #3b5998;
     font-size: 160%;
 }
 
-.ion-social-twitter:hover {
-    color: #00aced;
-}
+.ion-social-twitter:hover { color: #00aced; }
 
-.ion-social-instagram:hover {
-    color: #517fa4;
-}
+.ion-social-instagram:hover { color: #517fa4; }
 
 footer p {
     color: #f5f5f5;
@@ -614,20 +600,53 @@ footer p {
 
 .bt { text-align: center;}
 
+/* ----------------------------------------------- */
+/* LATEST - OFFERs */
+/* ----------------------------------------------- */
 
-
-
-
-.form-messages {
-    color: #fff;
-    width: 70%;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+.offers {
+    background-color: rgba(52, 73, 94, 0.1);
+    padding-top: 30px;
 }
 
-.success {background-color: rgba(78, 113, 37, 0.7);}
+.decreased { width: 50%; }
 
-.error {background-color: rgba(113, 69, 37, 0.7);}
+.offers-nav {
+        display: flex; 
+        justify-content:space-between;
+        align-items: flex-start;
+}    
+
+.checkmarks-offer {
+   list-style: none; 
+   text-align: left;
+}
+
+.offers-content {
+    display: flex; 
+    justify-content:flex-start;
+    align-items: flex-start;
+    }
+
+/* ----- Container - offer - hidden ----- */
+.container {
+  position: fixed; 
+  border-radius: 7px;
+  box-shadow: 0 2px 2px #efefef;
+  transition: all 0.3s ease-in-out;
+  width: 0;
+  overflow: hidden;
+  z-index: -2;
+}
+.show-container {
+  position: fixed;
+  top: 150px;
+  right: 5%;
+  width: 90%;
+  height: auto;
+  box-shadow: 3px 3px 3px #efefef;
+  transform: rotateY(-360deg);
+  z-index: 9999;
+}  
+
+

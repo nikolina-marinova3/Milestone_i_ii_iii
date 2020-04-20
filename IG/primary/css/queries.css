@@ -9,7 +9,7 @@
     .section { padding: 30px 0; }
     
     .row,
-    .leading-text-box { padding: 0 2%; }
+    .leading-text-box { padding: 0 1%; }
     
    
     .main-nav { display: none; }
@@ -52,7 +52,7 @@
         padding: 0 4%;
     }
         
-    .row {padding: 0 1%;}
+    .row {padding: 0 0.5%;}
     
     .view {
         display: flex; 
@@ -77,12 +77,13 @@
     .section-testimonials {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+    }
         
     cite img { height: 60px;}  
                         
     .checkmarks { font-size: 90%;
         min-height: 130px;
-        }
+    }
    
 
 }
@@ -130,17 +131,25 @@
         border-bottom: 2px solid #8BC34A ;
         }
         
+        .show-container {
+            position:fixed;
+            top: 60px;
+            right: 15%;
+            width: 70%; }
+        
+        
 }
         
 /* Big displays from 1024px to 1200px - MOBILE FIRST APPROACH */
 
 @media only screen and (min-width: 1024px) {
     font-size: 19px;
-}
+
 .checkmarks { 
     font-size: 90%;
     line-height: 150%;
     }
+}
 
 /* Big displays from 1201px to 1140px - MOBILE FIRST APPROACH */
 
