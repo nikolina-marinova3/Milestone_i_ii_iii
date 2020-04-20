@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="additional/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="primary/css/style.css">
         <link rel="stylesheet" type="text/css" href="primary/css/queries.css">
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css">
         <title>InfraLtd</title>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -118,10 +118,10 @@
             
 <!-- SERVICES -->  
         <section class="section-services" id="services">
-            <div class="row">
+            
                 <h3>Services</h3>
-            </div>
-            <div class="service view">
+            
+            <div class="view">
                 <div class="box service">
                     <i class="ion-leaf icon-big"></i>
                     <h4>Landscape design</h4>
@@ -230,8 +230,7 @@
             </div>
          </section>   
 <!-- end of SURFACING -->
-        
-<!-- GALLERIES -->     
+ <!-- GALLERIES -->     
         <section class="section-galleries" id="galleries">
             <div class="row">
             <h3>Gallery</h3>
@@ -281,9 +280,61 @@
             </ul>
          </div>
         </section>
- <!-- end of GALLERIES -->       
+ <!-- end of GALLERIES -->          
         
-
+<!-- OFFERS and Expert's Advice -->           
+      <section class="offers" id="offers">
+        <div>
+            <div>
+                <h3>Offers and Expert's Advice</h3>
+                <p class="row phrase">
+                     Infra Ltd landscaping and surfacing designers will help you overcome most problems when choosing to build your driveway, pave your patio or create unique garden. Ideas and techniques features in the design project will undoubtedly offer the best solutions for your specific site challenges.
+                </p>
+            </div>
+                    
+            <div class="advices view">
+                <div class="box advice">
+                     <h4>Landscape design</h4>
+                    <p>
+                    We can help you solving the most common backyard drainage problems by conducting a simple drainage rate test of your soil. Techniques for creating focal points and designing in inches rather than feet can help to make the most of a small yard landscape. On the other side bold trees and layered plantings can be used to enhance large spaces. Carefully selected wetland trees suitable for planting in wet ground and high water levels as well as variegated shade plants for planting in shady spaces. Plants, fences and privacy screens can be used for creating privacy in your yard and to stop unwanted noise.
+                    </p>
+                </div>
+                <div class="box advice">
+                    <h4>Driveways</h4>
+                    <p>
+                    The most important things to consider when you decide to build your residential driveway:  Driveway width, layout and material to suit your budget and design goals. The pros and cons of the options for paving a driveway, including concrete, gravel, resins, pavers and asphalt. Some complex designs may require building a drainage system or grading the surface while incorporating slopes or curves. Precisely lights positioning will optimize safety of your residential driveway at night.
+                    </p>
+                </div>
+                <div class="box advice">
+                    <h4>Garden and Patio</h4>
+                    <p>
+                    While you deciding on the purpose of a patio, we can help you to determine the right size, layout and shape. You can choose from our practical and cost effective patio designs and walking patterns considering the pros and cons of the most popular patio materials including concrete, pavers, brick, natural stone tiles and permeable paving. Maintenance, weather exposure and slip resistance are also important factors to consider. Defining the purpose of your patio will help you in selecting furniture that best suits patio size, shape and layout
+                    </p>
+                </div>
+             </div>
+            <div>
+                <button id="view-offers" class="next" >Our Offers</button>
+            </div>
+         </div> 
+         <div id="container" class="container project-box">
+                <div>
+                  <div class="offers-nav">
+                    <p class="project-step">Our Offers</p>         
+                    <a class="offer-nav-icon" id="close-offer"><i class="ion-close-round"></i></a>
+                  </div>
+                  <div class="offer offers-content">
+                      <div class="gallery-photo decreased" id="imageDisplay"></div>
+                      <div>
+                        <div class="checkmarks checkmarks-offer" id="offerDisplay"></div>
+                        <a href="#form">Get a Free Quote</a>
+                      </div>     
+                  </div>  
+                      <button id="next" class="next" >Next</button>
+                </div>    
+          </div>   
+       </section>   
+<!-- end of GALLERY NEW -->
+        
 <!-- TESTIMONIALS -->      
         <section class="section-testimonials" id="testimonials">
             <div class="row">
@@ -293,19 +344,19 @@
                 <div class="tm">
                     <blockquote>
                         Infra Ltd carried out an excellent work on our site. Their experts were on hand to guide us through the project and answered all the questions we had. The work was done efficiently and completed within time estimated. Thank you for your professional work. We will certainly recommend you to anyone who needs surfacing and landscaping services.
-                        <cite><img src="primary/img/customer-1.jpg" alt="Customer 1 photo">T. Kaneva</cite>
+                        <cite>T. Kaneva</cite>
                     </blockquote>
                 </div>
                 <div class="tm">
                     <blockquote>
                        Infra Ltd offered a detailed construction specification and price for our project. They handled our project from early planning and designed straight through to the end, remaining professional and prompt at all times. We are delighted with the outcome and we will not hesitate to recommend you to our friends and neighbours.
-                        <cite><img src="primary/img/customer-2.jpg" alt="Customer 2 photo">T. Dimitrova</cite>
+                        <cite>T. Dimitrova</cite>
                     </blockquote>
                 </div>
                 <div class="tm">
                     <blockquote>
                         We would like to extend our sincere thanks for the recent work that your company undertook on our site. Infra Ltd specialist were always punctual in their work and kept us posted on everything that was happening on the site. After the transformation, we are delighted with the overall appearance and would definitely recommend Infra Ltd to anybody who may need surfacing services.
-                    <cite><img src="primary/img/customer-3.jpg" alt="Customer 3 photo">G. Ivanov</cite>
+                    <cite>G. Ivanov</cite>
                     </blockquote>
                 </div>
             </div>
@@ -332,19 +383,7 @@
                   <h3>Get your free quote</h3>
                </div>   
                <div class="row">
-                <quote method="post" action="mailer.php" class="contact-quote">
-<!--
-                
-                    if ($_GET['success'] == 1) {
-                        echo "<div class=\"form-messages success\">
-                        Thank you! Your message was sent successfully.</div>";
-                     }
-                     if ($_GET['success'] == -1) {
-                        echo "<div class=\"form-messages error\">
-                        Something went wrong. Please, try again!</div>";
-                     }   
-            
--->
+                <quote method="post" action="" class="contact-quote">
                     <div class="row">
                         <div class="fr">
                             <label for="name">Name</label>
@@ -385,7 +424,7 @@
                     </div>
                     <div class="row quote">
                         <div class="fr">
-                            <label for="text-message">Desribe your dreamed project to get a free no obligation quote.</label>
+                            <label for="text-message">Describe your dreamed project to get a free no obligation quote.</label>
                         </div>
                         <div class="fr">
                             <textarea name="message" id="text-message"  placeholder="Describe your project"></textarea>
