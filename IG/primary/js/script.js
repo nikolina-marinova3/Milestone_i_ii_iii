@@ -44,20 +44,23 @@ const data = [
   {
     number: '1 from 3',
     name: '10% discount on contemporary patio and garden furniture.',
-    description: '7-year guarantee furniture available in five weave colours. Rattan all-weather furniture is durable in the harshest sunlight and the coldest winters and can be left outside all year round. We can customise it, adding or subtracting any piece to suit your individual place.',
-    image: 'primary/img/7_1_gallery.jpg'
+    description: 'Furniture with a 7-year guarantee available in five weave colours. Rattan all-weather furniture is durable in the harshest sunlight and the coldest winters and can be left outside all year round.',
+    image: 'primary/img/7_1_gallery.jpg',
+    alt: '10% discount on patio and garden furniture'
   },
   {
     number: '2 from 3',
     name: '10% discount on tall antiquated lighting for driveways.',
-    description: 'Choose from variety of electrical lighting that is durable and provide greater illumination. Antiquated lamp-style lights will cast a warmly unique glow over your driveway. Mark your passage safely and in style with our precisely placed driveway lights.',
-    image: 'primary/img/7_7_gallery.jpg'
+    description: 'Choose from a variety of electrical lighting that is durable and provides greater illumination. Mark your passage safely and in style with our precisely placed driveway lights.',
+    image: 'primary/img/7_7_gallery.jpg',
+    alt: '10% discount on antiquated lighting for driveways'
   },
   {
     number: '3 from 3',
-    name: '15% on plant fragrant flowers for your garden or yard.',
-    description: 'Create a succession of seasonal aromatherapies with our garden fragrant flowers and bushes to maximize the experience of you and your guests. Carefully planting design will boost your spirit and add romance close to where you sit and dine.',
-    image: 'primary/img/7_8_gallery.jpg'
+    name: '15% discount on plant fragrant flowers for your garden or yard.',
+    description: 'Create a succession of seasonal aromatherapies with our garden fragrant flowers and bushes in order to maximise the experience of you and your guests.',
+    image: 'primary/img/7_8_gallery.jpg',
+    alt: '15% discount on plant fragrant flowers for your garden or yard'
   },
 ];
 
@@ -77,13 +80,16 @@ function nextOffer() {
     document.getElementById('offerDisplay').innerHTML = `
     <ul class="list-group">
         <li class="list-group-item">Offer Number: ${currentOffer.number}</li>
-        <li class="list-group-item">Offer Title: ${currentOffer.name}</li>
-        <li class="list-group-item">Offer Description: ${currentOffer.description}</li>
+        <li class="list-group-item">Title: ${currentOffer.name}</li>
+        <li class="list-group-item">Description: ${currentOffer.description}</li>
       </ul>
     `;
 
-    document.getElementById('imageDisplay').innerHTML = `<img src="${currentOffer.image}">`;
-  } else {
+    document.getElementById('imageDisplay').innerHTML = `<img src="${currentOffer.image}" alt="${currentOffer.alt}">`;
+  } 
+    
+      
+    else {
     // No more offers
     window.description.reload();
   }
