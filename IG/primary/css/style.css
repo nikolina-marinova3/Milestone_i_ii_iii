@@ -1,7 +1,6 @@
 /* ----------------------------------------------- */
 /* MAIN SETTINGs */
 /* ----------------------------------------------- */
-
 * {
     margin: 0;
     padding: 0;
@@ -9,19 +8,16 @@
 }
 
 :root {
-
     --mainFont: rgba(94, 71, 52, 0.8); /*wet asphalt*/;
     --mainWhite: #fff;
 }
 
 html,
 body {
-   
     color: var(--mainFont);
     background-color: var(--mainWhite);
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
-/*    font-size: 16px;*/
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
 }
@@ -34,9 +30,7 @@ body {
     margin: 0 auto;
 }
 
-.box {
-    padding: 7px;
-}
+.box { padding: 7px; }
 
 /* ----- HEADINGs ----- */
 h1,
@@ -75,18 +69,17 @@ h3:after {
     display: block;
     background-color: var(--mainFont);
     content: " ";
-    margin: 12px auto;
+    margin: 24px auto;
     height: 1.5px;
     width: 15%;
 }
 
 /* ----- PARAGRAPHs ----- */
-
 .phrase {
     line-height: 145%;
-    margin-left: 10%;
-    margin-bottom: 10px;
-    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
     text-align: justify;
 }
 
@@ -96,7 +89,6 @@ h3:after {
 }
 
 /* ----- LINKs ----- */
-
 a:link,
 a:visited {
     color: #4e7125;
@@ -349,26 +341,36 @@ header {
     background-color: #fcfcfc;
 }
 
-.service,
-.advice { padding: 0 2%; }
+.service { padding: 0 2%; }
+
 .service p { text-align: justify; }
 
 /* ----------------------------------------------- */
-/* SURFACING */
+/* SURFACING PRICE */
 /* ----------------------------------------------- */
 
 .section-surfacing {
     background-color: rgba(52, 73, 94, 0.1);
-    padding-top: 30px;
+    padding-top: 70px;
+    padding-bottom: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .surface-box {
     background-color: #fcfcfc;
     border-radius: 7px;
     width: 96%;
-    margin: 3% 2%;
+    margin: 8% 2%;
     box-shadow: 0 2px 2px #efefef;
 }
+
+.surface-box h4 {
+    text-align: center;
+    font-size: 90%;
+}
+
 
 .surface-box img {
     width: 100%;
@@ -384,7 +386,7 @@ header {
 
 .checkmarks {
     list-style: none;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
     font-size: 90%;
     line-height: 145%;
 }
@@ -396,17 +398,21 @@ header {
 .section-galleries {
     padding-top: 70px;
     background-color: #fcfcfc;
+    display: flex;
+    justify-content: center;
 }
 
 .galleries-showcase {
     list-style: none;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .galleries-showcase li {
     display: flex;
-    width: 25%;
+    width: 100%;
 }
 
 .gallery-photo {
@@ -448,9 +454,7 @@ header {
     padding-top: 70px;
 }
 
-.section-testimonials h3:after {
-     background-color: #fff;
-}
+.section-testimonials h3:after { background-color: #fff; }
 
 blockquote {
     padding: 2%;
@@ -606,47 +610,90 @@ footer p {
 
 .offers {
     background-color: rgba(52, 73, 94, 0.1);
-    padding-top: 30px;
+    padding-top: 70px;
+    padding-bottom: 16px;
 }
-
-.decreased { width: 50%; }
 
 .offers-nav {
         display: flex; 
         justify-content:space-between;
         align-items: flex-start;
-}    
+        font-size: 80%;
+ }    
 
-.checkmarks-offer {
-   list-style: none; 
-   text-align: left;
+.decreased { width: 50%; }
+
+.offers-content { 
+    font-size: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.offers-content {
-    display: flex; 
-    justify-content:flex-start;
-    align-items: flex-start;
-    }
+.checkmarks-offer { text-align: justify; }
 
 /* ----- Container - offer - hidden ----- */
 .container {
   position: fixed; 
-  border-radius: 7px;
-  box-shadow: 0 2px 2px #efefef;
   transition: all 0.3s ease-in-out;
   width: 0;
   overflow: hidden;
   z-index: -2;
 }
+
+.container-box {
+    border-radius: 7px;
+    width: 100%;
+    margin: 2% 1%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.container-box div {
+    padding: 15px 7px;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: rgba(206, 206, 206, 0.5);
+}
+
+.container-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(221, 221, 221);
+}
+.container-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
 .show-container {
   position: fixed;
   top: 150px;
   right: 5%;
   width: 90%;
   height: auto;
-  box-shadow: 3px 3px 3px #efefef;
   transform: rotateY(-360deg);
   z-index: 9999;
 }  
+
+.advice-box {
+    background-color: #fcfcfc;
+    border-radius: 7px;
+    width: 96%;
+    margin: 3% 2%;
+    padding: 1px, 7px;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.price {
+    list-style: none;
+    border: 1px solid #4e7125;
+    border-radius: 7px;
+    color: #4e7125;
+    text-align: center;
+    font-size: 90%;
+}
+
+
+
+
 
 
