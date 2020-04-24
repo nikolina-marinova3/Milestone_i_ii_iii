@@ -50,7 +50,9 @@ h2 {
     word-spacing: 5px;
 }
 
-h2 { font-size: 160%; }
+h1 {font-size: 180%;}
+
+h2 { font-size: 140%; }
 
 h3 {
     font-size: 180%;
@@ -593,7 +595,7 @@ address {
 .quote {background-color: #fcfcfc;}
 
 .contact-quote {
-    width: 60%;
+    width: 92%;
     margin: 0 auto;
 }
 
@@ -614,13 +616,12 @@ textarea { height: 100px; }
 input[type=checkbox] {
     margin: 10px 5px 10px 0;
 }
-/**:focus {outline: none;}*/
 
 /* ----- Form validation ----- */
 
 .quote {
-  margin-bottom: 10px;
-  padding-bottom: 20px;
+  margin-bottom: 3px;
+  padding-bottom: 7px;
   position: relative;
 }
 
@@ -652,6 +653,7 @@ input[type=checkbox] {
 /* ----------------------------------------------- */
 /* FOOTER */
 /* ----------------------------------------------- */
+
 
 footer {
     background-color: #333;
