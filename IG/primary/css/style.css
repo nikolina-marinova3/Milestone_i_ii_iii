@@ -242,7 +242,8 @@ header {
     text-align: center;
 }
 
-/* Main navi */
+
+/* Main navigation */
 .main-nav {
     list-style: none;
     margin-top: 1px;
@@ -254,7 +255,7 @@ header {
     color: var(--mainFont);
 }
 
-/* Sticky navi */ 
+/* Sticky navigation */ 
 .sticky {
     display: flex;
     justify-content:space-between;
@@ -288,7 +289,9 @@ header {
     margin-right: 2px;
 }
 
-.mobile-nav-icon i { font-size: 200%; }
+.mobile-nav-icon i { 
+    color: #555;
+    font-size: 200%; }
 
 /* ----------------------------------------------- */
 /* PROJECTs */
@@ -371,7 +374,6 @@ header {
     font-size: 90%;
 }
 
-
 .surface-box img {
     width: 100%;
     height: auto;
@@ -391,6 +393,57 @@ header {
     line-height: 145%;
 }
 
+.price {
+    list-style: none;
+    border: 1px solid #4e7125;
+    border-radius: 7px;
+    color: #4e7125;
+    text-align: center;
+    font-size: 90%;
+}
+
+/* ----- Container - offer - hidden ----- */
+.container {
+  position: fixed; 
+  transition: all 0.3s ease-in-out;
+  width: 0;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.container-box {
+    border-radius: 7px;
+    width: 100%;
+    margin: 2% 1%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.container-box div {
+    padding: 15px 7px;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: rgba(206, 206, 206, 0.5);
+}
+
+.container-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(221, 221, 221);
+}
+.container-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.show-container {
+  position: fixed;
+  top: 150px;
+  right: 5%;
+  width: 90%;
+  height: auto;
+  transform: rotateY(-360deg);
+  z-index: 9999;
+}  
 /* ----------------------------------------------- */
 /* GALLERIEs */
 /* ----------------------------------------------- */
@@ -440,7 +493,45 @@ header {
     -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
+/* ----------------------------------------------- */
+/* LATEST - EXPERTs ADVICE*/
+/* ----------------------------------------------- */
 
+.offers {
+    background-color: rgba(52, 73, 94, 0.1);
+    padding-top: 70px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offers-nav {
+        display: flex; 
+        justify-content:space-between;
+        align-items: flex-start;
+        font-size: 80%;
+ }    
+
+.decreased { width: 50%; }
+
+.offers-content { 
+    font-size: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkmarks-offer { text-align: justify; }
+
+.advice-box {
+    background-color: #fcfcfc;
+    border-radius: 7px;
+    width: 96%;
+    margin: 3% 2%;
+    padding: 1px, 7px;
+    box-shadow: 0 2px 2px #efefef;
+}
 /* ----------------------------------------------- */
 /* TESTIMONIALS */
 /* ----------------------------------------------- */
@@ -497,7 +588,7 @@ address {
     font-size: 120%;
     padding-bottom: 30px;
     text-align: center;
-    }
+}
 
 .quote {background-color: #fcfcfc;}
 
@@ -523,7 +614,40 @@ textarea { height: 100px; }
 input[type=checkbox] {
     margin: 10px 5px 10px 0;
 }
-*:focus {outline: none;}
+/**:focus {outline: none;}*/
+
+/* ----- Form validation ----- */
+
+.quote {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.quote input:focus,
+.quote textarea:focus,
+.quote select:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.quote.success input {
+  border-color: #5ec35e;
+}
+
+.quote.error input {
+  border-color: #dd896a;
+}
+
+.quote small {
+  color: #dd896a;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.quote.error small { visibility: visible; }
 
 /* ----------------------------------------------- */
 /* FOOTER */
@@ -604,93 +728,11 @@ footer p {
 
 .bt { text-align: center;}
 
-/* ----------------------------------------------- */
-/* LATEST - OFFERs */
-/* ----------------------------------------------- */
 
-.offers {
-    background-color: rgba(52, 73, 94, 0.1);
-    padding-top: 70px;
-    padding-bottom: 16px;
-}
 
-.offers-nav {
-        display: flex; 
-        justify-content:space-between;
-        align-items: flex-start;
-        font-size: 80%;
- }    
 
-.decreased { width: 50%; }
 
-.offers-content { 
-    font-size: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.checkmarks-offer { text-align: justify; }
 
-/* ----- Container - offer - hidden ----- */
-.container {
-  position: fixed; 
-  transition: all 0.3s ease-in-out;
-  width: 0;
-  overflow: hidden;
-  z-index: -2;
-}
-
-.container-box {
-    border-radius: 7px;
-    width: 100%;
-    margin: 2% 1%;
-    box-shadow: 0 2px 2px #efefef;
-}
-
-.container-box div {
-    padding: 15px 7px;
-    border-bottom: 1px solid #e8e8e8;
-    background-color: rgba(206, 206, 206, 0.5);
-}
-
-.container-box div:first-child {
-    background-color: #fcfcfc;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    background-color: rgb(221, 221, 221);
-}
-.container-box div:last-child {
-    text-align: center;
-    border: 0;
-}
-
-.show-container {
-  position: fixed;
-  top: 150px;
-  right: 5%;
-  width: 90%;
-  height: auto;
-  transform: rotateY(-360deg);
-  z-index: 9999;
-}  
-
-.advice-box {
-    background-color: #fcfcfc;
-    border-radius: 7px;
-    width: 96%;
-    margin: 3% 2%;
-    padding: 1px, 7px;
-    box-shadow: 0 2px 2px #efefef;
-}
-
-.price {
-    list-style: none;
-    border: 1px solid #4e7125;
-    border-radius: 7px;
-    color: #4e7125;
-    text-align: center;
-    font-size: 90%;
-}
 
 
 

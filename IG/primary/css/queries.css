@@ -17,25 +17,24 @@
     .mobile-nav-icon { 
         display: inline-block;
         margin-top: 0px; 
-/*        color: #555;*/
     }
-    
-/*    .mobile-nav-icon i { color: #555; }*/
         
     h1 { font-size: 180%; }
-    h3 { font-size: 150%; 
-         padding-top: 3px;}
+    h3 { 
+        font-size: 150%; 
+        padding-top: 3px;
+    }
     
     .phrase {
         width: 100%;
         margin: 5px 10px;
+        align-items: center;
     }
     
     .view {
     display: block; 
     }
- 
-}
+ }
        
 /* Small tablet to big tablet/displays: from 768px to 991px  MOBILE FIRST APPROACH */
 
@@ -72,8 +71,11 @@
         margin-right: 5px;
     }
     
-   .project-step { font-size: 160%;
-        color: #71a436;}
+   .project-step { 
+       font-size: 160%;
+       color: #71a436;
+    }
+        
    .contact-quote { width: 80%; }
         
     .section-testimonials {
@@ -83,12 +85,9 @@
         
     cite img { height: 60px;}  
                         
-    .checkmarks { font-size: 90%;
-    }
+    .checkmarks { font-size: 90%; }
    
-    .advice-price {
-        display: block;
-        }
+    .advice-price { display: block; }
  
     .offers-content {
         display: flex; 
@@ -103,58 +102,52 @@
 
     @media only screen and (min-width: 992px) {
         .mobile-nav-icon {
-         display: none;
+            display: none;
         }
         
         .show-menu {
-        display: none;
+            display: none;
         }  
         
         .main-nav {
-        display:flex;
-        justify-content: space-around;
-        margin-left: 40px;
+            display:flex;
+            justify-content: space-around;
+            margin-left: 40px;
         }
         
         .main-nav li {
-        display: inline-block;
-        margin-left: 40px;
-            /*    color: #555;*/
+            display: inline-block;
+            margin-left: 40px;
         }
         
         .main-nav li a:link,
         .main-nav li a:visited {
-            /*    padding: 8px 0;*/
-        padding: 16px 0;
-            /*    color: #fff;*/
-        padding: 16px 0;
-        color: #555;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 90%;
-        border-bottom: 2px solid transparent;
-        -webkit-transition: border-bottom 0.2s;
-        transition: border-bottom 0.2s;
+            padding: 16px 0;
+            padding: 16px 0;
+            color: #555;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 90%;
+            border-bottom: 2px solid transparent;
+            -webkit-transition: border-bottom 0.2s;
+            transition: border-bottom 0.2s;
         }
 
         .main-nav li a:hover,
-        .main-nav li a:active {
-        border-bottom: 2px solid #8BC34A ;
-        }
+        .main-nav li a:active { border-bottom: 2px solid #8BC34A;}
         
         .show-container {
             position:fixed;
             top: 60px;
             right: 15%;
-            width: 70%; }
-        
-  
+            width: 70%; 
+        }
 }
         
 /* Big displays from 1024px to 1200px - MOBILE FIRST APPROACH */
 
 @media only screen and (min-width: 1024px) {
-   body { font-size: 19px; }
+     body { font-size: 19px; }
 
     .checkmarks { 
      font-size: 90%;
@@ -166,18 +159,22 @@
         justify-content: center;
     }
     
-    .advice {
-        width: 32%;
-    }
+    .advice { width: 32%; }
     
+    .galleries-showcase {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 /* Big displays from 1201px to 1140px - MOBILE FIRST APPROACH */
 
 @media only screen and (min-width: 1201px) {
     body { font-size: 20px; }
-    
 }
+
+
 
 
 
