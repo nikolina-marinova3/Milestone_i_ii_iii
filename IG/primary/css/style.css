@@ -620,8 +620,8 @@ input[type=checkbox] {
 /* ----- Form validation ----- */
 
 .quote {
-  margin-bottom: 3px;
-  padding-bottom: 7px;
+  margin-bottom: 16px;
+  padding-bottom: 3px;
   position: relative;
 }
 
@@ -643,7 +643,7 @@ input[type=checkbox] {
 .quote small {
   color: #dd896a;
   position: absolute;
-  bottom: 0;
+  top: 100%;
   left: 0;
   visibility: hidden;
 }
