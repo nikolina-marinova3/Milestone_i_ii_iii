@@ -1,4 +1,6 @@
 // SHOW MOBILE MENU
+// immediately invoked function expression
+
 
 (function() {
   const menuInfo = document.getElementById("menu-info");
@@ -16,6 +18,8 @@
 })();
 
 // SHOW OFFERs CONTAINER
+// immediately invoked function expression
+
 
 (function() {
   const viewOffers = document.getElementById("view-offers");
@@ -32,29 +36,31 @@
   });
 })();
 
+
+
 // PRICE and OFFERS - offers scroller
 
 const data = [
   {
-    number: '1 from 3',
-    name: '10% discount on contemporary patio and garden furniture.',
-    description: 'Furniture with a 7-year guarantee available in five weave colours. Rattan all-weather furniture is durable in the harshest sunlight and the coldest winters and can be left outside all year round.',
+    number: '1 от 3',
+    name: '10% намаление на градинска мебел.',
+    description: 'Градинска мебел със седемгодишна гаранция. Налична в различни цветове и подходяща за всякакви метереологични условия. ',
     image: 'primary/img/7_1_gallery.jpg',
-    alt: '10% discount on patio and garden furniture'
+    alt: '10% намаление на градинска мебел'
   },
   {
-    number: '2 from 3',
-    name: '10% discount on tall antiquated lighting for driveways.',
-    description: 'Choose from a variety of electrical lighting that is durable and provides greater illumination. Mark your passage safely and in style with our precisely placed driveway lights.',
+    number: '2 от 3',
+    name: '10% намаление на осветление за алеи.',
+    description: 'Осветление за алеи - стил античен. Подобрява видимостта през нощта.',
     image: 'primary/img/7_7_gallery.jpg',
-    alt: '10% discount on antiquated lighting for driveways'
+    alt: '10% намаление на осветление за алеи.'
   },
   {
-    number: '3 from 3',
-    name: '15% discount on plant fragrant flowers for your garden or yard.',
-    description: 'Create a succession of seasonal aromatherapies with our garden fragrant flowers and bushes in order to maximise the experience of you and your guests.',
+    number: '3 от 3',
+    name: '15% намаление на ароматни растения.',
+    description: '15% намаление на ароматни растения - цветя и храсти за вашия двор или градина.',
     image: 'primary/img/7_2_gallery.jpg',
-    alt: '15% discount on plant fragrant flowers for your garden or yard'
+    alt: '15% намаление на ароматни растения'
   },
 ];
 
@@ -73,18 +79,20 @@ function nextOffer() {
   if(currentOffer !== undefined) {
     document.getElementById('offerDisplay').innerHTML = `
     <ul class="list-group">
-        <li class="list-group-item">Offer Number: ${currentOffer.number}</li>
-        <li class="list-group-item">Title: ${currentOffer.name}</li>
-        <li class="list-group-item">Description: ${currentOffer.description}</li>
+        <li class="list-group-item">Номер: ${currentOffer.number}</li>
+        <li class="list-group-item">Оферта: ${currentOffer.name}</li>
+        <li class="list-group-item">Описание: ${currentOffer.description}</li>
       </ul>
     `;
 
     document.getElementById('imageDisplay').innerHTML = `<img src="${currentOffer.image}" alt="${currentOffer.alt}">`;
   } 
     
-      else {
+      
+    else {
     // No more offers
     window.description.reload();
+        
   }
 }
 
@@ -100,6 +108,7 @@ function offerIterator(offers) {
     }
   };
 }
+
 
 // QUOTE FORM VALIDATION
 
@@ -135,21 +144,21 @@ form.addEventListener('submit', function(e) {
   e.preventDefault();
     
     if (username.value === '') {
-         showError(username, 'Please, enter your name above.');
+         showError(username, 'Моля въведете вашето име.');
     } else {
         showSuccess(username);
     }
     
      if (email.value === '') {
-         showError(email, 'Please, enter your email above.');
+         showError(email, 'Моля въведете вашият имейл.');
      } else if(!validateEmail(email.value)){
-         showError(email, 'Please, enter valid email.');
+         showError(email, 'Моля въведете валиден имейл.');
      } else {
         showSuccess(email);
     }
 
      if (message.value === '') {
-        showError(message, 'Please, describe your dream project above.');
+        showError(message, 'Опишете вашият проект.');
     } else {
         showSuccess(message);
     }
